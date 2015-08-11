@@ -1,0 +1,25 @@
+{
+  "name": "nodetunes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimoneGonzalez/nodetunes.git"
+  },
+  "author": "simone gonzalez <simone.b.gonzalez@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SimoneGonzalez/nodetunes/issues"
+  },
+  "homepage": "https://github.com/SimoneGonzalez/nodetunes#readme",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "ejs": "^2.3.3",
+    "express": "^4.13.3",
+    "mongodb": "^2.0.40"
+  }
+}
