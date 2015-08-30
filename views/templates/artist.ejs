@@ -5,8 +5,11 @@
 </head>
 <body>
   <h1>Create an artist</h1>
-  <form>
-    <input type="text" placeholder="Artist Name">
+  <form action="artist/add" method="POST">
+    <label for="name">Artist Name</label>
+    <input type="text" name="name" placeholder="Beyoncé">
+    <label for="genre">Genre</label>
+    <input type="text" name="genre" placeholder="R&B">
     <input type="submit" value="Add Artist">
   </form>
 </body>

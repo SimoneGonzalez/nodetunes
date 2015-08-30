@@ -8,7 +8,7 @@ router.post('/add', function(req, res) {
   var collection = global.db.collection('albums');
   collection.save(req.body, function() {
     res.redirect('/albums');
-  })
+  });
 });
 
 module.exports = router;

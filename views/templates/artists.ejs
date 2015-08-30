@@ -3,10 +3,22 @@
 <head>
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <ul>
-    <li>Artist 1</li>
-    <li>Artist 2</li>
-  </ul>
+  <h1><%= title %></h1>
+
+  <div class="artists">
+    <table>
+      <tr>
+        <th>Artist</th>
+        <th>Genre</th>
+      </tr>
+      <% artists.forEach(function (artist){ %>
+      <tr>
+        <td><%= artist.name %></td>
+        <td><%= artist.genre %></td>
+      </tr>
+      <% }); %>
+    </table>
+  </div>
+
 </body>
 </html>
