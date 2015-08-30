@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var artist = require('./routes/artist');
 var artists = require('./routes/artists');
+var album = require('./routes/album');
 
 
 var app = express();
@@ -18,6 +19,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use('/', routes);
 app.use('/artist', artist);
 app.use('/artists', artists);
+app.use('/album', album);
+
 app.use(express.static('www'));
 
 
